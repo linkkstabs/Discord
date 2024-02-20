@@ -10,7 +10,7 @@ keepAlive();
 function formatTime() { //Credits to himika#0001 and never#0001
   const date = new Date();
   const options = {
-    timeZone: 'America/Port_of_Spain', //https://www.zeitverschiebung.net/en/ and find your city and enter here
+    timeZone: 'Japan', //https://www.zeitverschiebung.net/en/ and find your city and enter here
     hour12: true,
     hour: 'numeric',
     minute: 'numeric'
@@ -25,17 +25,16 @@ client.on('ready', async () => {
   const r = new Discord.RichPresence()
     .setApplicationId('1189883886579232788')
     .setType('STREAMING')
-    .setURL('https://www.youtube.com/watch?v=4-siHP8YjhI') //Must be a youtube video link 
-    .setState('Sleepy')
-    .setName('randomness')
-    .setDetails(`Hey 👋⚓ [${formatTime()}]`)
+    .setURL('https://twitch.tv/linkkstabs') //Must be a youtube video link 
+    .setState('Idle')
+    .setName('Minecraft')
+    .setDetails(`SKLauncher [${formatTime()}]`)
     .setStartTimestamp(Date.now())
- .setAssetsLargeImage('https://cdn.discordapp.com/attachments/1150242860273254460/1201348112325824592/latest_banner.gif') //You can put links in tenor or discord and etc.
-    .setAssetsLargeText('insert funny text') //Text when you hover the Large image
-    .setAssetsSmallImage('https://cdn.discordapp.com/attachments/1150242860273254460/1190250393746280509/cc5323ff-e634-4a9b-8320-2cb09efa665a.gif') //You can put links in tenor or discord and etc.
-    .setAssetsSmallText('You weirdo, why would you hover over the small image.') //Text when you hover the Small image
-    .addButton('My Site 🔨', 'https://vornexx.is-a.dev')
-    .addButton('My Rentry Page ✏️💞', 'https://rentry.co/vornexx')
+ .setAssetsLargeImage('https://media.discordapp.net/attachments/1181126458744242206/1209352071103512586/logo.png?ex=65e69be2&is=65d426e2&hm=989cb8526348de2e9d8fdc00d4fd77047d7829ea7c96864c56cd61e8fa4496fe&=&format=webp&quality=lossless') //You can put links in tenor or discord and etc.
+    .setAssetsLargeText('SKLauncher') //Text when you hover the Large image
+    .setAssetsSmallImage('https://media.discordapp.net/attachments/1181126458744242206/1209352070877159544/skinmc-avatar.png?ex=65e69be2&is=65d426e2&hm=03e1a29414709b98eceda681b6a078d2e58c0f5814ffa6f359bf5dfdfa30486d&=&format=webp&quality=lossless') //You can put links in tenor or discord and etc.
+    .setAssetsSmallText('LinkkStabs') //Text when you hover the Small image
+    .addButton('Carrd', 'https://linkkstabs.carrd.co')
 
   client.user.setActivity(r);
   client.user.setPresence({ status: "dnd" }); //dnd, online, idle, offline
@@ -44,7 +43,7 @@ client.on('ready', async () => {
   setInterval(() => {
     const newTime = formatTime();
     if (newTime !== prevTime) {
-      const newDetails = `Hey 👋⚓ [${newTime}]`;
+      const newDetails = `SKLauncher [${newTime}]`;
       r.setDetails(newDetails);
       client.user.setActivity(r);
       prevTime = newTime;
