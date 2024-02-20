@@ -10,7 +10,7 @@ keepAlive();
 function formatTime() { //Credits to himika#0001 and never#0001
   const date = new Date();
   const options = {
-    timeZone: 'Asia/Kolkata', //https://www.zeitverschiebung.net/en/ and find your city and enter here
+    timeZone: 'Chennai, India', //https://www.zeitverschiebung.net/en/ and find your city and enter here
     hour12: true,
     hour: 'numeric',
     minute: 'numeric'
@@ -27,7 +27,7 @@ client.on('ready', async () => {
     .setType('STREAMING')
     .setURL('https://twitch.tv/linkkstabs') //Must be a youtube video link 
     .setState('Minecraft')
-    .setName('')
+    .setName('Minecraft')
     .setDetails(`SKLauncher [${formatTime()}]`)
     .setStartTimestamp(Date.now())
  .setAssetsLargeImage('https://media.discordapp.net/attachments/1181126458744242206/1209352071103512586/logo.png?ex=65e69be2&is=65d426e2&hm=989cb8526348de2e9d8fdc00d4fd77047d7829ea7c96864c56cd61e8fa4496fe&=&format=webp&quality=lossless') //You can put links in tenor or discord and etc.
