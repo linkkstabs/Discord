@@ -26,14 +26,14 @@ client.on('ready', async () => {
     .setApplicationId('1208472205432848406')
     .setType('STREAMING')
     .setURL('https://twitch.tv/linkkstabs') //Must be a youtube video link 
-    .setState('Minecraft')
-    .setName('Minecraft')
-    .setDetails(`SKLauncher [${formatTime()}]`)
+    .setState('ドリーム ')
+    .setName('楽しんで')
+    .setDetails(`となりのトトロ [${formatTime()}]`)
     .setStartTimestamp(Date.now())
- .setAssetsLargeImage('https://media.discordapp.net/attachments/1181126458744242206/1209352071103512586/logo.png?ex=65e69be2&is=65d426e2&hm=989cb8526348de2e9d8fdc00d4fd77047d7829ea7c96864c56cd61e8fa4496fe&=&format=webp&quality=lossless') //You can put links in tenor or discord and etc.
-    .setAssetsLargeText('SKLauncher') //Text when you hover the Large image
-    .setAssetsSmallImage('https://media.discordapp.net/attachments/1181126458744242206/1209352070877159544/skinmc-avatar.png?ex=65e69be2&is=65d426e2&hm=03e1a29414709b98eceda681b6a078d2e58c0f5814ffa6f359bf5dfdfa30486d&=&format=webp&quality=lossless') //You can put links in tenor or discord and etc.
-    .setAssetsSmallText('LinkkStabs') //Text when you hover the Small image
+ .setAssetsLargeImage('https://media.discordapp.net/attachments/1181126458744242206/1209548911115636776/giphy.gif?ex=65e75334&is=65d4de34&hm=1b0dd53d29217a98dcf6415e28ca93c80b47f93f6a39d1168640984010c97a01&=') //You can put links in tenor or discord and etc.
+    .setAssetsLargeText('Totoro') //Text when you hover the Large image
+    .setAssetsSmallImage('https://media.discordapp.net/attachments/1181126458744242206/1209548911786594345/giphy_1.gif?ex=65e75334&is=65d4de34&hm=4a1616086a89747daaa343271ada6d04f39dfddde3a1f631d7402e87e3c9aed7&=') //You can put links in tenor or discord and etc.
+    .setAssetsSmallText('Mei') //Text when you hover the Small image
     .addButton('Carrd', 'https://linkkstabs.carrd.co')
 
   client.user.setActivity(r);
@@ -43,7 +43,7 @@ client.on('ready', async () => {
   setInterval(() => {
     const newTime = formatTime();
     if (newTime !== prevTime) {
-      const newDetails = `SKLauncher [${newTime}]`;
+      const newDetails = `となりのトトロ [${newTime}]`;
       r.setDetails(newDetails);
       client.user.setActivity(r);
       prevTime = newTime;
