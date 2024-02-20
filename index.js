@@ -23,7 +23,7 @@ client.on('ready', async () => {
   console.log(`${client.user.tag} - rpc started! check your profile ^^`);
 
   const r = new Discord.RichPresence()
-    .setApplicationId('1189883886579232788')
+    .setApplicationId('1208472205432848406')
     .setType('STREAMING')
     .setURL('https://twitch.tv/linkkstabs') //Must be a youtube video link 
     .setState('Idle')
