@@ -26,7 +26,7 @@ client.on('ready', async () => {
     .setApplicationId('1208472205432848406')
     .setType('STREAMING')
     .setURL('https://twitch.tv/linkkstabs') //Must be a youtube video link 
-    .setState('Minecraft')
+    .setState('')
     .setName('Minecraft')
     .setDetails(`SKLauncher [${formatTime()}]`)
     .setStartTimestamp(Date.now())
