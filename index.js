@@ -7,7 +7,7 @@ const client = new Discord.Client({
 const keepAlive = require('./server.js');
 keepAlive();
 
-function formatTime() { //Credits to himika#0001 and never#0001
+function formatTime(null) { //Credits to himika#0001 and never#0001
   const date = new Date();
   const options = {
     timeZone: '', //https://www.zeitverschiebung.net/en/ and find your city and enter here
