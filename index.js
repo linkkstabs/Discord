@@ -26,9 +26,9 @@ client.on('ready', async () => {
     .setApplicationId('1208472205432848406')
     .setType('STREAMING')
     .setURL('https://twitch.tv/linkkstabs') //Must be a youtube video link 
-    .setState('ドリーム ')
-    .setName('楽しんで')
-    .setDetails(`となりのトトロ [${formatTime()}]`)
+    .setState('dreaming.. ')
+    .setName('Productive :>')
+    .setDetails(`Idle [${formatTime()}]`)
     .setStartTimestamp(Date.now())
  .setAssetsLargeImage('https://media.discordapp.net/attachments/1181126458744242206/1209548911115636776/giphy.gif?ex=65e75334&is=65d4de34&hm=1b0dd53d29217a98dcf6415e28ca93c80b47f93f6a39d1168640984010c97a01&=') //You can put links in tenor or discord and etc.
     .setAssetsLargeText('Totoro') //Text when you hover the Large image
